@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <!-- styles  -->
+    <link rel="stylesheet" href="css/main.css" />
     <!-- Bootstrap link -->
     <link
       rel="stylesheet"
@@ -11,19 +13,192 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h3 class="display-3">Comandos Flex</h3>
-        <p>Lista con los comandos de Flex CSS:</p>
-        <!-- Añade aquí la lista de comandos Flex -->
+    <!-- Empieza aqui -->
 
-        <h3 class="display-3">Comandos Grid</h3>
-        <p>Lista con los comandos de Grid CSS:</p>
-        <!-- Añade aquí la lista de comandos Grid -->
+    <div class="container mt-5 display-1">
+      <h1 class="text-center mb-4">Comandos de Flex y Grid en Bootstrap</h1>
 
-        <a href="assets/propiedadesFlexGrid.pdf">Enlace con los comandos</a>
-      </div>
+      <!-- Sección de Flexbox -->
+      <section>
+        <h2 class="mb-3 display-3">Comandos de Flexbox</h2>
+        <ul class="list-group mb-4">
+          <li class="list-group-item">
+            <strong>.d-flex:</strong> Aplica display flex a un contenedor.
+            <div class="jumbotron">
+              <pre>.d-flex { display: flex; }</pre>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.flex-row:</strong> Dirección de los elementos en fila.
+            <div class="jumbotron">
+              <pre>.flex-row { flex-direction: row; }</pre>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.flex-column:</strong> Dirección de los elementos en
+            columna.
+            <div class="jumbotron">
+              <pre>.flex-column { flex-direction: column; }</pre>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.justify-content-start:</strong> Alinea los elementos al
+            inicio del contenedor.
+            <div class="jumbotron">
+              <pre>.justify-content-start { justify-content: flex-start; }</pre>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.justify-content-end:</strong> Alinea los elementos al final
+            del contenedor.
+            <div class="jumbotron">
+              <pre>.justify-content-end { justify-content: flex-end; }</pre>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.justify-content-center:</strong> Centra los elementos
+            horizontalmente.
+            <div class="jumbotron">
+              <pre>.justify-content-center { justify-content: center; }</pre>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.justify-content-between:</strong> Distribuye los elementos
+            con espacio entre ellos.
+            <div class="jumbotron">
+              <pre>
+.justify-content-between { justify-content: space-between; }</pre
+              >
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.align-items-start:</strong> Alinea los elementos al inicio
+            verticalmente.
+            <div class="jumbotron">
+              <pre>.align-items-start { align-items: flex-start; }</pre>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.align-items-end:</strong> Alinea los elementos al final
+            verticalmente.
+            <div class="jumbotron">
+              <pre>.align-items-end { align-items: flex-end; }</pre>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.align-items-center:</strong> Centra los elementos
+            verticalmente.
+            <div class="jumbotron">
+              <pre>.align-items-center { align-items: center; }</pre>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Sección de Grid -->
+      <section>
+        <h2 class="mb-3">Comandos de Grid</h2>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <strong>.container:</strong> Contenedor básico para centrar el
+            contenido y agregar padding horizontal.
+            <div class="jumbotron">
+              <pre>
+.container { width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }</pre
+              >
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.row:</strong> Contenedor para filas de columnas.
+            <div class="jumbotron">
+              <pre>
+.row { display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px; }</pre
+              >
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.col:</strong> Columna flexible que se ajusta según el
+            tamaño de la pantalla.
+            <div class="jumbotron">
+              <pre>
+.col { position: relative; width: 100%; padding-right: 15px; padding-left: 15px; }</pre
+              >
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.col-*</strong> Columna fija de tamaño específico (1 a 12).
+            <div class="jumbotron">
+              <pre>.col-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }</pre>
+              <pre>.col-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }</pre>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.col-sm-*</strong> Columna fija de tamaño específico para
+            pantallas pequeñas (≥576px).
+            <div class="jumbotron">
+              <pre>
+@media (min-width: 576px) { .col-sm-1 { flex: 0 0 8.333333%; max-width: 8.333333%; } }</pre
+              >
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.col-md-*</strong> Columna fija de tamaño específico para
+            pantallas medianas (≥768px).
+            <div class="jumbotron">
+              <pre>
+@media (min-width: 768px) { .col-md-1 { flex: 0 0 8.333333%; max-width: 8.333333%; } }</pre
+              >
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.col-lg-*</strong> Columna fija de tamaño específico para
+            pantallas grandes (≥992px).
+            <div class="jumbotron">
+              <pre>
+@media (min-width: 992px) { .col-lg-1 { flex: 0 0 8.333333%; max-width: 8.333333%; } }</pre
+              >
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.col-xl-*</strong> Columna fija de tamaño específico para
+            pantallas extra grandes (≥1200px).
+            <div class="jumbotron">
+              <pre>
+@media (min-width: 1200px) { .col-xl-1 { flex: 0 0 8.333333%; max-width: 8.333333%; } }</pre
+              >
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.g-*</strong> Espaciado entre columnas (gap) (0 a 5).
+            <div class="jumbotron">
+              <pre>.g-0 { gap: 0; }</pre>
+              <pre>.g-1 { gap: 0.25rem; }</pre>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <strong>.offset-*</strong> Desplazamiento de columnas para alinear
+            el contenido.
+            <div class="jumbotron">
+              <pre>.offset-1 { margin-left: 8.333333%; }</pre>
+              <pre>.offset-2 { margin-left: 16.666667%; }</pre>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <footer>
+        <div class="container">
+          <footer class="py-3 my-4">
+            <p>
+              <a href="assets/propiedadesFlexGrid.pdf" target="_blank"
+                >Enlace con los comandos</a
+              >
+            </p>
+            <p class="text-center text-body-secondary">Social Media @David3r</p>
+          </footer>
+        </div>
+      </footer>
     </div>
+    <!-- termina aca -->
 
     <!-- Bootstrap scripts  -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
